@@ -48,8 +48,8 @@ app.use("/management", managementRoutes);
 app.use("/sales", salesRoutes);
 
 
-  // const PORT = process.env.PORT || 9000;
-  const PORT = process.env.MONGO_URL;
+  const PORT = process.env.PORT || 9000;
+  // const PORT = process.env.MONGO_URL;
   mongoose
     .connect(process.env.MONGO_URL, {
       useNewUrlParser: true,
